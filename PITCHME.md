@@ -131,9 +131,12 @@ def BankAccount
 end
 
 def Human
-	attr_reader :bank_account
 	def initialize(password)
 		@bank_account = BankAccount.new(password)
+	end
+
+	def check_bank_amount(password)
+		p @bank_account.check_amount(password)
 	end
 end
 ```
