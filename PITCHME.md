@@ -98,7 +98,7 @@ end
 
 ```ruby
 def BankAccount
-	attr_reader: password, :amount
+	attr_reader :password, :amount
 	def initialize(password)
 		@password = password
 		@amount = 0
