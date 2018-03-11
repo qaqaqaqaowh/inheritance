@@ -29,6 +29,43 @@ end
 
 ### Private and Public
 
++++
+
+### What's the problem?
+
+```ruby
+class Character
+	def initialize
+		@lives = 10
+	end
+
+	def add_live
+		@lives += 1
+	end
+end
+```
+
++++
+
+### How to fix it?
+
+```ruby
+class Character
+	def initialize
+		@lives = 10
+	end
+
+	def cheat_code(code)
+		add_live if code == "I need help"
+	end
+
+private
+	def add_live
+		@lives += 1
+	end
+end
+```
+
 ---
 
 ### Inheritance
