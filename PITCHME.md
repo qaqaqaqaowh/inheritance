@@ -57,12 +57,37 @@ cat.eat("tomato") # "tomato rejected"
 
 ```ruby
 class Wheel
+	attr_reader :size
+	def initialize(wheel_size)
+		@size = wheel_size
+	end
 end
+```
 
++++
+
+```ruby
 class Car
 	attr_reader :wheels
-	def initialize
-		@wheels = [Wheel.new,Wheel.new,Wheel.new,Wheel.new]
+	def initialize(wheel_size)
+		@wheels = []
+		4.times do |i|
+			@wheels << Wheel.new(wheel_size)
+		end
+	end
+end
+```
+
++++
+
+```ruby
+class Bike
+	attr_reader :wheels
+	def initialize(wheel_size)
+		@wheels = []
+		2.times do |i|
+			@wheels << Wheel.new(wheel_size)
+		end
 	end
 end
 ```
