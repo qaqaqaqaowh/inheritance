@@ -54,3 +54,15 @@ cat.eat("tomato") # "tomato rejected"
 ---
 
 ### Composition
+
+```ruby
+class Wheel
+end
+
+class Car
+	attr_reader :wheels
+	def initialize
+		@wheels = [Wheel.new,Wheel.new,Wheel.new,Wheel.new]
+	end
+end
+```
