@@ -18,19 +18,6 @@ end
 +++
 
 ```ruby
-class Tree
-	attr_reader :height
-	def initialize
-		@height = 0
-	end
-end
-
-class OrangeTree < Tree
-end
-
-class AppleTree < Tree
-end
-
 orange_tree = OrangeTree.new
 orange_tree.height # 0
 ```
@@ -51,12 +38,17 @@ class Animal
 		end
 	end
 end
+```
 
-def Human < Animal
++++
+
+```ruby
+class Cat < Animal
 end
 
-def Cat < Animal
-end
+cat = Cat.new("fish")
+cat.eat("fish") # "eats fish"
+cat.eat("tomato") # "tomato rejected"
 ```
 
 ---
