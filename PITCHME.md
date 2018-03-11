@@ -143,4 +143,4 @@ end
 
 +++
 
-[Extra material](/extra/encapsulation.rb)
+[Extra material](https://github.com/qaqaqaqaowh/inheritance/blob/master/extra/encapsulation.rb)
