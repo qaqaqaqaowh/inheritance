@@ -1,3 +1,36 @@
+### Modules
+```ruby
+module SomeModule
+	def something
+		p "something"
+	end
+end
+```
+
++++
+
+```ruby
+module Maths
+	def sum(val1,val2)
+		return val1 + val2
+	end
+end
+```
+
+Using the keyword `include`
+
+```ruby
+class Something
+	include Maths
+end
+```
+
+---
+
+### Private and Public
+
+---
+
 ### Inheritance
 
 ```ruby
