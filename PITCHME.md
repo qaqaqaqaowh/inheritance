@@ -140,3 +140,7 @@ def Human
 	end
 end
 ```
+
++++
+
+[Extra material](/extra/encapsulation.rb)
