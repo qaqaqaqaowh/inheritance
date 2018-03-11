@@ -144,3 +144,8 @@ end
 +++
 
 [Extra material](https://github.com/qaqaqaqaowh/inheritance/blob/master/extra/encapsulation.rb)
+
+---
+
+### Duck Typing
+Quack!
