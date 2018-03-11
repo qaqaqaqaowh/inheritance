@@ -91,3 +91,49 @@ class Bike
 	end
 end
 ```
+
+---
+
+### Encapsulation
+
+```ruby
+def BankAccount
+	attr_reader: password, :amount
+	def initialize(password)
+		@password = password
+		@amount = 0
+	end
+end
+
+def Human
+	def initialize(password)
+		@bank_account = BankAccount.new(password)
+	end
+
+	def check_amount(password)
+		@bank_account.amount if @bank_account.password == password
+	end
+end
+```
+
++++
+
+```ruby
+def BankAccount
+	def initialize(password)
+		@password = password
+		@amount = 0
+	end
+
+	def check_amount(password)
+		@password == password ? @amount:"Wrong password"
+	end
+end
+
+def Human
+	attr_reader :bank_account
+	def initialize(password)
+		@bank_account = BankAccount.new(password)
+	end
+end
+```
