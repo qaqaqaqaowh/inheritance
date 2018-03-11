@@ -149,3 +149,38 @@ end
 
 ### Duck Typing
 Quack!
+
++++
+
+```ruby
+def Tree
+	def initialize
+		@height = 0
+	end
+
+	def grow!
+		@height += 1
+	end
+end
+
+def Human
+	def initialize
+		@height = 0
+		@weight = 0
+	end
+
+	def grow!
+		@height += 1
+		@weight += 2
+	end
+end
+```
+
++++
+
+```ruby
+things = [Human.new, Tree.new]
+things.each do |thing|
+	thing.grow!
+end
+```
